@@ -1,0 +1,19 @@
+{
+  "name": "matbea",
+  "version": "0.0.1",
+  "description": "Matbea front-end project",
+  "license": "Apache-2.0",
+  "author": "Deadpool",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/deadpooll312/matbea-template"
+  },
+  "devDependencies": {
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-csso": "^4.0.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-uglify": "^3.0.2"
+  }
+}

@@ -1,0 +1,10 @@
+.idea
+yarn.lock
+yarn-error.log
+
+.DS_Store
+
+*/.DS_Store
+
+node_modules/
+dist/
