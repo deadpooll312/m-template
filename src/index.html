@@ -23,8 +23,8 @@
 <!--        </div>-->
 <!--    </div>-->
 
-    <div class="nav-bar d-flex justify-content-between align-items-center px-md-5 px-sm-3 px-lg-5">
-        <div class="col-1 p-0 burger">
+    <div class="nav-bar d-flex justify-content-between align-items-center px-md-5 px-sm-3 px-lg-5 px-4">
+        <div class="col-1 burger">
             <img src="assets/img/icons/svg/burger.svg" alt="">
         </div>
 
@@ -58,7 +58,7 @@
             </ul>
         </div>
 
-        <div class="col-2 d-flex justify-content-end align-items-center misc-bar pr-0">
+        <div class="col-2 d-flex justify-content-end align-items-center misc-bar pl-0">
             <span class="language">Eng</span>
             <span class="button button-primary login-button">Войти</span>
         </div>
@@ -74,19 +74,26 @@
         </div>
 
         <div class="buy-btc row mt-5">
-            <div class="col-xl-3 col-lg-4 col-md-12 col-sm-12">
+            <div class="col-xl-3 col-lg-12 col-md-12 col-sm-12">
                 <div class="d-flex justify-content-between align-items-center">
                     <div class="col pl-0 pr-1">
-                        <button class="btc-tab-button active">Купить</button>
+                        <button class="btc-tab-button outline active">Купить</button>
                     </div>
                     <div class="col pl-1 pr-0">
-                        <button class="btc-tab-button">Продать</button>
+                        <button class="btc-tab-button outline">Продать</button>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-12 col-sm-12">
-                <div class="exchange-item d-flex flex-sm-wrap-reverse align-items-center justify-content-between">
-                    <input type="text" placeholder="Введите сумму" value="10000" />
+            <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12">
+                <div class="exchange-item has-label d-flex flex-wrap-reverse align-items-center justify-content-between">
+                    <div class="input-wrapper d-flex justify-content-start align-items-center flex-nowrap">
+                        <div class="col-9 p-0">
+                            <input type="text" placeholder="Введите сумму" value="10000" id="exchange-target-input" />
+                        </div>
+                        <div class="col p-0">
+                            <label for="exchange-target-input">RUB</label>
+                        </div>
+                    </div>
                     <div class="-m-select">
                         <select>
                             <option value="sberbank">Сбербанк</option>
@@ -98,11 +105,98 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-5 col-lg-5 col-sm-12">
-
+            <div class="col-xl-5 col-lg-12 col-md-12 col-sm-12">
+                <div class="d-flex justify-content-between align-items-center flex-wrap has-action">
+                    <div class="col-xl-8 col-lg-12 col-md-12 col-sm-12 p-0">
+                        <div class="exchange-item d-flex flex-wrap-reverse align-items-center justify-content-between">
+                            <div class="input-wrapper d-flex justify-content-start align-items-center">
+                                <div class="col-9 p-0">
+                                    <input type="text" placeholder="Введите сумму" value="0.01866998" id="ltc-input"/>
+                                </div>
+                                <div class="col p-0">
+                                    <label for="ltc-input">BTC</label>
+                                </div>
+                            </div>
+                            <div class="-m-select">
+                                <select>
+                                    <option value="bitcoin">Bitcoin (BTC)</option>
+                                    <option value="litecoin">Litecoin (LTC)</option>
+                                    <option value="dash">Dash</option>
+                                    <option value="zcash">Zcash</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12 pr-0 action-button">
+                        <button class="btc-tab-button">Купить</button>
+                    </div>
+                </div>
             </div>
         </div>
 
+<!--        <div class="buy-btc row mt-2">-->
+<!--            <div class="col-xl-3 col-lg-12 col-md-12 col-sm-12">-->
+<!--                <div class="d-flex justify-content-between align-items-center">-->
+<!--                    <div class="col pl-0 pr-1">-->
+<!--                        <button class="btc-tab-button outline">Купить</button>-->
+<!--                    </div>-->
+<!--                    <div class="col pl-1 pr-0">-->
+<!--                        <button class="btc-tab-button outline active">Продать</button>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12">-->
+<!--                <div class="exchange-item d-flex flex-wrap-reverse align-items-center justify-content-between">-->
+<!--                    <div class="input-wrapper d-flex justify-content-start align-items-center">-->
+<!--                        <div class="col-9 p-0">-->
+<!--                            <input type="text" placeholder="Введите сумму" value="0.01866998" id="ltc-input-1"/>-->
+<!--                        </div>-->
+<!--                        <div class="col p-0">-->
+<!--                            <label for="ltc-input-1">BTC</label>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="-m-select">-->
+<!--                        <select>-->
+<!--                            <option value="bitcoin">Bitcoin (BTC)</option>-->
+<!--                            <option value="litecoin">Litecoin (LTC)</option>-->
+<!--                            <option value="dash">Dash</option>-->
+<!--                            <option value="zcash">Zcash</option>-->
+<!--                        </select>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="col-xl-5 col-lg-12 col-md-12 col-sm-12">-->
+<!--                <div class="d-flex justify-content-between align-items-center flex-wrap has-action">-->
+<!--                    <div class="col-xl-8 col-lg-12 col-md-12 col-sm-12 p-0">-->
+<!--                        <div class="exchange-item has-label d-flex flex-wrap-reverse align-items-center justify-content-between">-->
+<!--                            <div class="input-wrapper d-flex justify-content-start align-items-center flex-nowrap">-->
+<!--                                <div class="col-9 p-0">-->
+<!--                                    <input type="text" placeholder="Введите сумму" value="10000" id="exchange-target-input-1" />-->
+<!--                                </div>-->
+<!--                                <div class="col p-0">-->
+<!--                                    <label for="exchange-target-input-1">RUB</label>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <div class="-m-select">-->
+<!--                                <select>-->
+<!--                                    <option value="sberbank">Сбербанк</option>-->
+<!--                                    <option value="alfabank">Alfa-Банк</option>-->
+<!--                                    <option value="euroset">Евросеть</option>-->
+<!--                                    <option value="qiwi">Qiwi</option>-->
+<!--                                    <option value="yandex">Яндекс Деньги</option>-->
+<!--                                </select>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12 action-button">-->
+<!--                        <button class="btc-tab-button">Продать</button>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+    </div>
+
+    <div class="container-m-r container">
         <div class="deal-blocks d-flex justify-content-between align-items-start flex-nowrap">
             <div class="panel">
                 <div class="d-flex justify-content-between align-items-center">
@@ -126,8 +220,25 @@
                     <span class="updated">10 сентября 2019 (в 11:32 )</span>
                     <span class="gain up">2.34</span>
                 </div>
-                <h2>1 BTC = <span>465 235.00 ₽</span></h2>
-                <p>Продажа = 462 465.00 ₽ </p>
+                <h2>1 LTC = <span>43 665.00 ₽</span></h2>
+                <p>Продажа = 462 465.00 ₽</p>
+
+                <div class="actions d-flex justify-content-between align-items-center">
+                    <div class="col pl-0">
+                        <button type="button" class="button hover-effect">Купить</button>
+                    </div>
+                    <div class="col pl-0">
+                        <button type="button" class="button hover-effect">Продать</button>
+                    </div>
+                </div>
+            </div>
+            <div class="panel">
+                <div class="d-flex justify-content-between align-items-center">
+                    <span class="updated">10 сентября 2019 (в 11:32 )</span>
+                    <span class="gain down">2.34</span>
+                </div>
+                <h2>1 ZEC = <span>5 235.00 ₽</span></h2>
+                <p>Продажа = 462 465.00 ₽</p>
 
                 <div class="actions d-flex justify-content-between align-items-center">
                     <div class="col pl-0">
@@ -143,25 +254,8 @@
                     <span class="updated">10 сентября 2019 (в 11:32 )</span>
                     <span class="gain up">2.34</span>
                 </div>
-                <h2>1 BTC = <span>465 235.00 ₽</span></h2>
-                <p>Продажа = 462 465.00 ₽ </p>
-
-                <div class="actions d-flex justify-content-between align-items-center">
-                    <div class="col pl-0">
-                        <button type="button" class="button hover-effect">Купить</button>
-                    </div>
-                    <div class="col pl-0">
-                        <button type="button" class="button hover-effect">Продать</button>
-                    </div>
-                </div>
-            </div>
-            <div class="panel">
-                <div class="d-flex justify-content-between align-items-center">
-                    <span class="updated">10 сентября 2019 (в 11:32 )</span>
-                    <span class="gain up">2.34</span>
-                </div>
-                <h2>1 BTC = <span>465 235.00 ₽</span></h2>
-                <p>Продажа = 462 465.00 ₽ </p>
+                <h2>1 DASH = <span>4655.00 ₽</span></h2>
+                <p>Продажа = 462 465.00 ₽</p>
 
                 <div class="actions d-flex justify-content-between align-items-center">
                     <div class="col pl-0">
@@ -175,5 +269,242 @@
         </div>
     </div>
 </section>
+
+<section class="promotion-block mt-3">
+    <div class="container">
+        <div class="promotion-wrapper d-flex justify-content-between align-items-center">
+            <div class="promotion-info-wrapper">
+                <p>Криптосреда</p>
+                <h2>
+                    <span class="sub-text">Двойной бонус -</span><br/>
+                    Только по средам!
+
+                    <img src="assets/img/promotion-badge.svg" alt="Promotion Badge" class="badge" />
+                </h2>
+                <button type="button">Подробнее</button>
+            </div>
+            <div class="promotion-thumbnail-wrapper">
+                <img src="assets/img/hero-image.jpg" alt="Promotion">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="partners">
+    <div class="container">
+        <h3>Доступный способ покупки</h3>
+        <p>Большой выбор способов пополнения и вывода средств с лицевого счета.</p>
+
+        <div class="text-center">
+            <a href="#">Как купить биткоин?</a>
+        </div>
+
+        <div class="d-flex justify-content-center align-items-center flex-wrap mt-4">
+            <div class="item">
+                <img src="assets/img/partners/sberbank.png" alt="Sberbank" />
+            </div>
+            <div class="item">
+                <img src="assets/img/partners/alfabank.png" alt="Sberbank" />
+            </div>
+            <div class="item">
+                <img src="assets/img/partners/euroset.png" alt="Sberbank" />
+            </div>
+            <div class="item">
+                <img src="assets/img/partners/qiwi.png" alt="Sberbank" />
+            </div>
+            <div class="item">
+                <img src="assets/img/partners/vtb.png" alt="Sberbank" />
+            </div>
+            <div class="item">
+                <img src="assets/img/partners/rustandart.png" alt="Sberbank" />
+            </div>
+            <div class="item">
+                <img src="assets/img/partners/yandex.png" alt="Sberbank" />
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="info-block mt-5">
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-center flex-wrap-reverse">
+            <div class="col-xl col-lg col-md col-sm-12 info-block-text">
+                <span class="icon security"></span>
+
+                <h3>Безопасно</h3>
+
+                <p>Мы используем трех-факторную аутентификацию:</p>
+                <p>СМС-код, емейл-код и пин-код. Даже если на вашем компьютере поселился вирус, он никак не сможет считать код из СМС. А если вирус поселится на смартфоне, он не сможет считать пин-код или емейл-код.</p>
+                <p>Гибкая система настройки безопасности - Вы можете опционально подключить любую из удобных для Вас систему безопасности</p>
+
+                <div class="d-flex justify-content-start align-items-center mt-5">
+                    <button class="button secondary">Войти</button>
+                    <button class="button no-bg ml-3">Регистрация</button>
+                </div>
+
+                <div class="logo-wrapper mt-5">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="59" height="9" viewBox="0 0 59 9">
+                        <path fill="#1C1C1C" fill-rule="nonzero" stroke="none" d="M0 0h3.745l1.446 5.476L6.63 0h3.732v9H8.037V2.136L6.234 9H4.129L2.33 2.136V9H0V0zm17.846 7.514h-3.242L14.158 9h-2.91l3.463-9h3.104l3.462 9H18.3l-.453-1.486zm-.597-1.946l-1.018-3.235-1.011 3.235h2.03zM20.655 0h8.653v2.222h-2.903V9H23.56V2.222h-2.904V0zm9.948 0h5.329c.888 0 1.57.215 2.045.645.476.43.713.961.713 1.596 0 .532-.17.988-.509 1.369-.226.254-.557.454-.993.601.662.156 1.15.423 1.461.802.313.378.469.854.469 1.427 0 .467-.111.886-.333 1.258a2.426 2.426 0 0 1-.912.885c-.238.135-.599.233-1.08.294-.641.082-1.067.123-1.276.123h-4.914V0zm2.872 3.53h1.238c.444 0 .753-.075.926-.224.174-.15.261-.365.261-.648 0-.262-.087-.466-.26-.614-.174-.147-.477-.22-.909-.22h-1.256V3.53zm0 3.536h1.451c.49 0 .836-.085 1.037-.255a.85.85 0 0 0 .302-.684c0-.266-.1-.48-.299-.642-.199-.161-.548-.242-1.046-.242h-1.445v1.823zM40.6 0h7.628v1.922h-4.775v1.43h4.43v1.836h-4.43v1.774h4.914V9H40.6V0zm14.968 7.514h-3.243L51.88 9h-2.91l3.463-9h3.105L59 9h-2.979l-.452-1.486zm-.597-1.946l-1.018-3.235-1.012 3.235h2.03z" opacity=".1"/>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="col-xl col-lg col-md col-sm-12 info-block-thumbnail">
+                <img src="assets/img/security-block-thumbnail.jpg" alt="High security">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="info-block mt-5">
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-center flex-wrap">
+            <div class="col-xl col-lg col-md col-sm-12 info-block-thumbnail">
+                <img src="assets/img/earn-money-block-thumbnail.jpg" alt="High security">
+            </div>
+
+            <div class="col-xl col-lg col-md col-sm-12 info-block-text">
+                <span class="icon coins"></span>
+
+                <h3>Earn with matbea</h3>
+
+                <p>The Matby affiliate program has 7 levels - inviting friends, you will receive not only a percentage of their purchases of Bitcoin, Litecoin, Dash, Zach, but also a percentage of their invited friends and friends of friends up to level 7.</p>
+                <p>The affiliate program is not only profitable, but also as transparent as possible - detailed statistics and a full list of referrals are available in the personal account of each participant.</p>
+                <p>For your convenience, we provide all the ready material for placement - various banner and gif animations.</p>
+
+                <div class="d-flex justify-content-start align-items-center mt-5">
+                    <button class="button secondary">Start work</button>
+                    <button class="button no-bg ml-3">Register</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="advantages-block mt-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12">
+                <div class="item">
+                    <span class="icon graph"></span>
+
+                    <h4>Выгодный курс</h4>
+                    <p>В Матби одни из самых низких комиссий на российском рынке</p>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12">
+                <div class="item">
+                    <span class="icon rocket"></span>
+
+                    <h4>Быстрота работы</h4>
+                    <p>Наша техподдержка готова быстро ответить на ваши вопросы, а обработка операций занимает несколько минут</p>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12">
+                <div class="item">
+                    <span class="icon hours"></span>
+
+                    <h4>24/7</h4>
+                    <p>Быстрая обработка<br/> заявок 24/7</p>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12">
+                <div class="item">
+                    <span class="icon security"></span>
+
+                    <h4>Надёжно</h4>
+                    <p>Матби - надежный сервис, работает с 2014 года без сбоев</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="home-about">
+    <div class="container container-m-r">
+        <div class="home-about-holder">
+            <h3>
+                Проверенный годами<br />
+                и тысячами пользователей
+            </h3>
+            <p>Крипто-кошелек Матби успешно работает с 2014. Наша цель - предоставить простой, удобный, а главное безопасный способ работы с криптовалютами абсолютно для все. За 4 года работы мы заслужили репутацию безопасного сервиса. Нам доверяют тысячи людей. Создайте свой крипто-кошелек сейчас и станьте частью нашего сообщества!</p>
+
+            <button type="button" class="button">Узнать больше</button>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+            <div class="col-4 p-0">
+                <a href="#"><img src="assets/img/icons/svg/logo.svg" alt="Matbea.com" /></a>
+            </div>
+
+            <div class="col-4 d-flex justify-content-end align-items-center misc-bar p-0">
+                <span class="language">Eng</span>
+                <span class="button button-primary">Войти</span>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 address">
+                <h5>Address:</h5>
+
+                <p>
+                    Republic of Austria, 1010 Wien, Rosenbursenstrasse 2/21
+                    We don't charge any associated fees.
+                    <a href="#">support@matbea.com</a>
+                </p>
+
+                <p>© 2013 - 2018 matbea in London</p>
+            </div>
+            <div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 footer-menu">
+                <div class="row">
+                    <div class="col-xl-3 col-lg-3 col-6 col-md-6 col-sm-6">
+                        <h5>Главное:</h5>
+
+                        <ul>
+                            <li><a href="#">О Матби</a></li>
+                            <li><a href="#">Регистрация</a></li>
+                            <li><a href="#">Напишите нам</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-6 col-md-6 col-sm-6">
+                        <h5>Информация:</h5>
+
+                        <ul>
+                            <li><a href="#">Тарифы</a></li>
+                            <li><a href="#">Соглашение</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-6 col-md-6 col-sm-6">
+                        <h5>Финансы:</h5>
+
+                        <ul>
+                            <li><a href="#">Инвесторам</a></li>
+                            <li><a href="#">Курс Биткоин</a></li>
+                            <li><a href="#">Партнерская праграмма</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-6 col-md-6 col-sm-6">
+                        <h5>Узнать больше:</h5>
+
+                        <ul>
+                            <li><a href="#">Как купить Биткоин</a></li>
+                            <li><a href="#">Создать кашелек</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="seo-holder mt-5">
+            <p>КУПИТЬ БИТКОИНЫ НА МАТБИ. УДОБНЫЙ БИТКОИН КОШЕЛЕК - ОБМЕННИК!</p>
+            <p>Матби — это инновационный сервис, предоставляющий клиентам возможность создать биткоин кошелек, купить биткоины и хранить их в одном месте. Это позволит Вам покупать, продавать, хранить и тратить биткоины всего за несколько кликов мыши. С нами вы сможете в максимально удобной форме ознакомиться со всеми тонкостями работы с криптовалютой. Создать биткоин кошелек в Матби это не только просто, но и безопасно. Владельцу криптовалюты важно хранить ее в надежном месте. Безопасность, это одна из главных отличительных черт биткоин-кошелька Матби. В работу нашего сервиса мы внедрили трехуровневую систему идентификации: email, SMS и пин-код. Это позволит вам быть уверенными, что ваши цифровые деньги всегда находятся в надежном месте и недоступны для злоумышленников.</p>
+        </div>
+    </div>
+</footer>
+
 </body>
 </html>

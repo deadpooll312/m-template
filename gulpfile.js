@@ -6,10 +6,16 @@ const uglify = require('gulp-uglify');
 const del = require('del');
 
 function css() {
-    return src('src/assets/css/*.css')
+    return src([
+        'src/assets/css/bootstrap-grid.min.css',
+        'src/assets/css/bootstrap-reboot.min.css',
+        'src/assets/css/fonts.css',
+        'src/assets/css/shortcuts.css',
+        'src/assets/css/styles.css',
+    ])
         .pipe(minifyCSS())
         .pipe(concat('style.min.css'))
-        .pipe(dest('dist/css'))
+        .pipe(dest('dist/css', { sourcemaps: true }))
 }
 
 function js() {
