@@ -1291,6 +1291,13 @@ main.tariffs .ticket .side-border {
     padding-left: 30px;
 }
 
+main.tariffs .ticket p {
+    white-space: nowrap;
+    font-size: .9375rem;
+    font-weight: 300;
+    margin-bottom: 0;
+}
+
 @media screen and (max-width: 991px) {
     main.tariffs .ticket .side-border {
         padding-left: 15px;
@@ -1298,14 +1305,12 @@ main.tariffs .ticket .side-border {
         border-top: 1px solid #efefef;
         padding-top: 30px;
     }
+
+    main.tariffs .ticket p {
+        margin-bottom: 20px;
+    }
 }
 
-main.tariffs .ticket p {
-    white-space: nowrap;
-    font-size: .9375rem;
-    font-weight: 300;
-    margin-bottom: 0;
-}
 
 @media screen and (max-width: 1199px) {
     main.tariffs .ticket p {
