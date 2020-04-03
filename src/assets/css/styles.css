@@ -382,7 +382,7 @@ header.has-background {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-
+    z-index: 1;
     transform: translate(0, -50%);
 }
 
@@ -396,6 +396,9 @@ header.has-background {
     width: 100%;
     height: 100%;
     padding: 11px 10px;
+    z-index: 2;
+    position: relative;
+    cursor: pointer;
 }
 
 .buy-btc .exchange-item input:focus {
@@ -408,8 +411,19 @@ header.has-background {
 
 @media screen and (max-width: 1199px) {
     .buy-btc .exchange-item {
-        padding: 10px;
         margin-top: 20px;
+    }
+
+
+    .has-action .action-button {
+        padding: 0;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .buy-btc .exchange-item {
+        padding: 10px;
     }
 
     .buy-btc .exchange-item .input-wrapper {
@@ -424,11 +438,6 @@ header.has-background {
 
     .buy-btc .exchange-item .input-wrapper input {
         border-right: none;
-    }
-
-    .has-action .action-button {
-        padding: 0;
-        margin-top: 20px;
     }
 
     .buy-btc .exchange-item label {
@@ -1146,6 +1155,7 @@ main.information .ticket-cell p.font-weight-thin {
     color: #444;
     font-weight: 300;
     font-size: .86538rem;
+    text-align: left;
 }
 
 main.information .ticket-cell p a {
@@ -1276,7 +1286,7 @@ main.tariffs p {
     font-size: 1.00962rem;
 }
 
-main.tariffs .ticket {
+main.tariffs .ticket .ticket-holder {
     border-radius: .375rem;
     -webkit-box-shadow: 0 2px 4px 0 rgba(0,0,0,.05);
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.05);
@@ -1298,7 +1308,7 @@ main.tariffs .ticket p {
     margin-bottom: 0;
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1199px) {
     main.tariffs .ticket .side-border {
         padding-left: 15px;
         border-left: none;

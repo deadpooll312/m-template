@@ -707,7 +707,31 @@
     flex-wrap: nowrap !important;
 }
 
+.text-center {
+    text-align: center !important;
+}
+
+.text-left {
+    text-align: left !important;
+}
+
+.text-right {
+    text-align: right !important;
+}
+
 @media (min-width: 576px) {
+    .text-sm-center {
+        text-align: center !important;
+    }
+
+    .text-sm-left {
+        text-align: left !important;
+    }
+
+    .text-sm-right {
+        text-align: right !important;
+    }
+
     .flex-sm-row {
         -ms-flex-direction: row !important;
         flex-direction: row !important;
@@ -880,6 +904,18 @@
 }
 
 @media (min-width: 768px) {
+    .text-md-center {
+        text-align: center !important;
+    }
+
+    .text-md-left {
+        text-align: left !important;
+    }
+
+    .text-md-right {
+        text-align: right !important;
+    }
+
     .flex-md-row {
         -ms-flex-direction: row !important;
         flex-direction: row !important;
@@ -1052,6 +1088,18 @@
 }
 
 @media (min-width: 992px) {
+    .text-lg-center {
+        text-align: center;
+    }
+
+    .text-lg-left {
+        text-align: left !important;
+    }
+
+    .text-lg-right {
+        text-align: right !important;
+    }
+
     .flex-lg-row {
         -ms-flex-direction: row !important;
         flex-direction: row !important;
@@ -1224,6 +1272,18 @@
 }
 
 @media (min-width: 1200px) {
+    .text-xl-center {
+        text-align: center;
+    }
+
+    .text-xl-left {
+        text-align: left !important;
+    }
+
+    .text-xl-right {
+        text-align: right !important;
+    }
+
     .flex-xl-row {
         -ms-flex-direction: row !important;
         flex-direction: row !important;
