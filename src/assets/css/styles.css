@@ -1269,7 +1269,6 @@ main.information .partners .panel .ico.ico-altcoin-log {
     background-image: url(../img/informartion/item-5.png);
 }
 
-
 main.tariffs {
 
 }
@@ -1321,7 +1320,6 @@ main.tariffs .ticket p {
     }
 }
 
-
 @media screen and (max-width: 1199px) {
     main.tariffs .ticket p {
         white-space: pre-wrap;
@@ -1355,4 +1353,199 @@ main.tariffs .ticket .ico.ico-pay-sys[data-icon="1"] {
     width: 83px;
     height: 21px;
     background-image: url(../img/partners/sberbank.png);
+}
+
+.login-form-wrapper {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+form.register-form .ico {
+    display: inline-block;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+form.register-form .ico.ico-lock {
+    width: 18px;
+    height: 23px;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOCIgaGVpZ2h0PSIyMyI+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMCAxMi4zODV2OC44MThjMCAuODkzLjczIDEuNjIyIDEuNjIyIDEuNjIyaDE0Ljc1NmMuODkzIDAgMS42MjItLjczIDEuNjIyLTEuNjIydi04LjgxOGMwLS44OTMtLjczLTEuNjIyLTEuNjIyLTEuNjIyaC0xLjE0MVY2LjkyMmMwLTMuNDM4LTIuOC02LjIzNy02LjIzNy02LjIzN2E2LjI0NiA2LjI0NiAwIDAwLTYuMjM3IDYuMjM3LjU1Ny41NTcgMCAxMDEuMTE0IDAgNS4xMzQgNS4xMzQgMCAwMTUuMTI3LTUuMTI3YzIuODI3IDAgNS4xMjggMi4zIDUuMTI4IDUuMTI3djMuODQxSDEuNjIyQTEuNjI5IDEuNjI5IDAgMDAwIDEyLjM4NXptMTYuODkgMHY4LjgxOGMwIC4yODEtLjIzLjUxMi0uNTEyLjUxMkgxLjYyMmEuNTE0LjUxNCAwIDAxLS41MTItLjUxMnYtOC44MThjMC0uMjgxLjIzLS41MTIuNTEyLS41MTJoMTQuNzU2Yy4yODEuMDA0LjUxMi4yMy41MTIuNTEyeiIvPjwvc3ZnPg==);
+}
+
+form.register-form p {
+    font-size: 1.00962rem;
+    color: #000000;
+    font-weight: 300;
+    font-family: Circe-Thin, sans-serif;
+    margin-bottom: 0;
+}
+
+form.register-form p a,
+form.register-form p a:visited {
+    color: #2d58b6;
+    text-decoration: underline;
+    background-color: transparent;
+}
+
+form.register-form p a:hover {
+    color: #1e3a79;
+    text-decoration: underline;
+}
+
+form.register-form label {
+    font-size: .9rem;
+    color: #000000;
+    font-weight: 300;
+    font-family: Circe-Thin, sans-serif;
+    margin-top: 15px;
+}
+
+form.register-form label.present-label {
+    margin-bottom: 10px;
+}
+
+form.register-form .input-with-button {
+    width: 100%;
+    height: 49px;
+    position: relative;
+}
+
+form.register-form .input-with-button input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    border: 1px solid hsla(0,0%,49%,.3);
+    padding: .75rem 22px;
+    z-index: 1;
+
+    transition: border .5s;
+}
+
+form.register-form .input-with-button input:focus,
+form.register-form .input-with-button button:focus {
+    outline: none;
+    border-color: #2d58b6;
+}
+
+form.register-form .input-with-button button.flag-button {
+    position: relative;
+    float: right;
+    /*width: 20%;*/
+    height: 100%;
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    border: none;
+    z-index: 2;
+    padding-right: 40px;
+}
+
+form.register-form .input-with-button button.flag-button img {
+    -webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,.2);
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.2);
+}
+
+form.register-form .input-with-button button.flag-button::after,
+form.register-form .input-with-button button.flag-button::before {
+    position: absolute;
+    content: "";
+    display: block;
+    top: 50%;
+    width: 9px;
+    height: 1.5px;
+    background-color: #777;
+    border-radius: 1px;
+}
+
+form.register-form .input-with-button button.flag-button::before {
+    right: 12px;
+    -webkit-transform: rotate(-40deg);
+    transform: rotate(-40deg);
+}
+
+form.register-form .input-with-button button.flag-button::after {
+    right: 18px;
+    -webkit-transform: rotate(40deg);
+    transform: rotate(40deg);
+}
+
+form.register-form .input-with-button button.password-visible-button {
+    position: relative;
+    float: right;
+    height: 100%;
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    border: none;
+    z-index: 2;
+    padding-right: 10px;
+}
+
+form.register-form .input-with-button button.password-visible-button .ico {
+    display: inline-block;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: 50% 49%;
+    background-size: contain;
+}
+
+form.register-form .input-with-button button.password-visible-button .ico.ico-eye {
+    width: 31px;
+    height: 35px;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAAyCAYAAACqNX6+AAABMWlDQ1BBZG9iZSBSR0IgKDE5OTgpAAAoz62OsUrDUBRAz4ui4lArBHFweJMoKLbqYMakLUUQrNUhydakoUppEl5e1X6Eo1sHF3e/wMlRcFD8Av9AcergECGDgwie6dzD5XLBqNh1p2GUYRBr1W460vV8OfvEDFMA0Amz1G61DgDiJI74wecrAuB50647Df7GfJgqDUyA7W6UhSAqQP9CpxrEGDCDfqpB3AGmOmnXQDwApV7uL0ApyP0NKCnX80F8AGbP9Xww5gAzyH0FMHV0qQFqSTpSZ71TLauWZUm7mwSRPB5lOhpkcj8OE5UmqqOjLpD/B8BivthuOnKtall76/wzrufL3N6PEIBYeixaQThU598qjJ3f5+LGeBkOb2F6UrTdK7jZgIXroq1WobwF9+MvwMZP/U6/OGUAAAAJcEhZcwAAoQQAAKEEASz+fjsAAAW0aVRYdFhNTDpjb20uYWRvYmUueG1wAAAAAAA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/PiA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJBZG9iZSBYTVAgQ29yZSA1LjYtYzE0MiA3OS4xNjA5MjQsIDIwMTcvMDcvMTMtMDE6MDY6MzkgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIiB4bWxuczpwaG90b3Nob3A9Imh0dHA6Ly9ucy5hZG9iZS5jb20vcGhvdG9zaG9wLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdEV2dD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlRXZlbnQjIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDQyAoV2luZG93cykiIHhtcDpDcmVhdGVEYXRlPSIyMDE5LTA1LTE0VDExOjQ3OjI0KzAzOjAwIiB4bXA6TW9kaWZ5RGF0ZT0iMjAxOS0wNS0xNFQxMTo0ODoyNCswMzowMCIgeG1wOk1ldGFkYXRhRGF0ZT0iMjAxOS0wNS0xNFQxMTo0ODoyNCswMzowMCIgZGM6Zm9ybWF0PSJpbWFnZS9wbmciIHBob3Rvc2hvcDpDb2xvck1vZGU9IjMiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NDc2YjYyZDMtMWJkYS1hNTQxLTk4MTgtYTMyNWM5YmIwZjQ1IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjAwOWUxNTE5LTRkYjEtNDU0MS04YmM0LWUxYzlkNzI4NmY5YSIgeG1wTU06T3JpZ2luYWxEb2N1bWVudElEPSJ4bXAuZGlkOjAwOWUxNTE5LTRkYjEtNDU0MS04YmM0LWUxYzlkNzI4NmY5YSI+IDx4bXBNTTpIaXN0b3J5PiA8cmRmOlNlcT4gPHJkZjpsaSBzdEV2dDphY3Rpb249ImNyZWF0ZWQiIHN0RXZ0Omluc3RhbmNlSUQ9InhtcC5paWQ6MDA5ZTE1MTktNGRiMS00NTQxLThiYzQtZTFjOWQ3Mjg2ZjlhIiBzdEV2dDp3aGVuPSIyMDE5LTA1LTE0VDExOjQ3OjI0KzAzOjAwIiBzdEV2dDpzb2Z0d2FyZUFnZW50PSJBZG9iZSBQaG90b3Nob3AgQ0MgKFdpbmRvd3MpIi8+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJzYXZlZCIgc3RFdnQ6aW5zdGFuY2VJRD0ieG1wLmlpZDo0NzZiNjJkMy0xYmRhLWE1NDEtOTgxOC1hMzI1YzliYjBmNDUiIHN0RXZ0OndoZW49IjIwMTktMDUtMTRUMTE6NDg6MjQrMDM6MDAiIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkFkb2JlIFBob3Rvc2hvcCBDQyAoV2luZG93cykiIHN0RXZ0OmNoYW5nZWQ9Ii8iLz4gPC9yZGY6U2VxPiA8L3htcE1NOkhpc3Rvcnk+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3Jk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);
+    opacity: .8;
+}
+
+form.register-form button[type=submit] {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #2d58b6;
+    border-color: #2d58b6;
+    font-size: 14px;
+    font-weight: 300;
+
+    transition: background-color .5s, border .5s;
+}
+
+form.register-form button[type=submit]:hover {
+    background-color: #254997;
+    border-color: #2d58b6;
+}
+
+form.register-form button[type=submit]:focus {
+    outline: none;
+}
+
+
+main.create-wallet h3 {
+    margin-top: 97px;
+    margin-bottom: 35px;
+    font-size: 1.96875rem;
+    font-weight: 400;
+    line-height: 1.2;
+    color: inherit;
+}
+
+main.create-wallet p {
+    font-size: 1.00962rem;
+    color: #444;
+    margin-bottom: 1.75rem;
+    font-family: Circe-Regular, sans-serif;
+    font-weight: 300;
+}
+
+main.create-wallet p.font-weight-bold {
+    font-family: Circe-Bold, sans-serif;
+    font-weight: 500;
+}
+
+main.create-wallet img {
+    max-width: 100%;
 }
