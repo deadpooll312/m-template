@@ -1,39 +1,39 @@
 @font-face {
     font-family: 'Circe-Regular';
-    src: url('../fonts/Circe-Regular.eot');
-    src: url('../fonts/Circe-Regular.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/Circe-Regular.woff') format('woff'),
-    url('../fonts/Circe-Regular.ttf') format('truetype');
+    src: url('../../../dist/fonts/Circe-Regular.eot');
+    src: url('../../../dist/fonts/Circe-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../../../dist/fonts/Circe-Regular.woff') format('woff'),
+    url('../../../dist/fonts/Circe-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Circe-Bold';
-    src: url('../fonts/Circe-Bold.eot');
-    src: url('../fonts/Circe-Bold.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/Circe-Bold.woff') format('woff'),
-    url('../fonts/Circe-Bold.ttf') format('truetype');
+    src: url('../../../dist/fonts/Circe-Bold.eot');
+    src: url('../../../dist/fonts/Circe-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../../../dist/fonts/Circe-Bold.woff') format('woff'),
+    url('../../../dist/fonts/Circe-Bold.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Circe-Thin';
-    src: url('../fonts/Circe-Thin.eot');
-    src: url('../fonts/Circe-Thin.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/Circe-Thin.woff') format('woff'),
-    url('../fonts/Circe-Thin.ttf') format('truetype');
+    src: url('../../../dist/fonts/Circe-Thin.eot');
+    src: url('../../../dist/fonts/Circe-Thin.eot?#iefix') format('embedded-opentype'),
+    url('../../../dist/fonts/Circe-Thin.woff') format('woff'),
+    url('../../../dist/fonts/Circe-Thin.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Circe-Light';
-    src: url('../fonts/Circe-Light.eot');
-    src: url('../fonts/Circe-Light.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/Circe-Light.woff') format('woff'),
-    url('../fonts/Circe-Light.ttf') format('truetype');
+    src: url('../../../dist/fonts/Circe-Light.eot');
+    src: url('../../../dist/fonts/Circe-Light.eot?#iefix') format('embedded-opentype'),
+    url('../../../dist/fonts/Circe-Light.woff') format('woff'),
+    url('../../../dist/fonts/Circe-Light.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }

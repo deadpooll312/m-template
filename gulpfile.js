@@ -40,9 +40,15 @@ function _del() {
     return del('dist/')
 }
 
+function copyFonts() {
+    return src('src/assets/fonts/**/*.{eot,ttf,woff}')
+        .pipe(dest('dist/fonts'))
+}
+
 exports.js = js;
 exports.css = css;
 exports.img = img;
 exports.minImg = minImg;
 exports._del = _del;
-exports.default = series(_del, parallel(css, js, img, minImg));
+exports.copyFonts = copyFonts;
+exports.default = series(_del, parallel(css, js, minImg, copyFonts));

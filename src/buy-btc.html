@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Buy BTC | Matbea</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/bootstrap-reboot.min.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="assets/css/shortcuts.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+<section class="header-background">
+    <header>
+        <!--    <div class="top-bar d-flex justify-content-between align-items-center px-5">-->
+        <!--        <div class="col-3 p-0">-->
+        <!--            <a href="#">Мобильная версия</a>-->
+        <!--        </div>-->
+        <!--        <div class="col-3 d-flex justify-content-end align-items-center pr-0">-->
+        <!--            <a href="#" class="icon-link email">support@matbea.com</a>-->
+        <!--            <a href="#" class="icon-link telegram ml-4">t.me/matbea</a>-->
+        <!--        </div>-->
+        <!--    </div>-->
+
+        <div class="nav-bar d-flex justify-content-between align-items-center px-md-5 px-sm-3 px-lg-5 px-4">
+            <div class="col-1 burger">
+                <img src="assets/img/icons/svg/burger.svg" alt="">
+            </div>
+
+            <div class="logo-wrapper">
+                <a href="#">
+                    <img src="assets/img/icons/svg/logo.svg" alt="Matbea" />
+                </a>
+            </div>
+
+            <div class="col main-menu">
+                <ul class="nav-menu d-flex justify-content-start align-items-center">
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">О Матби</a></li>
+                    <li><a href="#">Тарифы</a></li>
+                    <li><a href="#">Соглашение</a></li>
+                    <li><a href="#">Инвесторам</a></li>
+                    <li class="has-dropdown">
+                        <a href="#">Создать кашелек</a>
+
+                        <div class="dropdown">
+                            <ul>
+                                <li><a href="#">Создать Биткоин кашелек</a></li>
+                                <li><a href="#">Создать Лайткоин кашелек</a></li>
+                                <li><a href="#">Создать Dash кашелек</a></li>
+                                <li><a href="#">Создать Zcash кашелек</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">Как купить биткоин</a></li>
+                    <li><a href="#">Курс биткоин</a></li>
+                </ul>
+            </div>
+
+            <div class="col-2 d-flex justify-content-end align-items-center misc-bar pl-0">
+                <span class="language">Eng</span>
+                <span class="button button-primary login-button">Войти</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="container page-title-wrapper">
+        <div class="d-flex justify-content-start align-items-start">
+            <div class="mr-4">
+                <a href="#" class="arrow-back"></a>
+            </div>
+
+            <div class="f-col page-title">
+                <h1 class="m-0 mb-1">Вы задаетесь вопросом как криптовалюту новичку?</h1>
+                <p>Все просто!</p>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-center align-items-center mt-5">
+            <div class="col-xl-10 col-lg-10 col-md-12 col-sm-12">
+                <div class="row buy-btc">
+                    <div class="col-xl-5 col-lg-12 col-sm-12">
+                        <div class="exchange-item has-label d-flex flex-wrap-reverse align-items-center justify-content-between">
+                            <div class="input-wrapper d-flex justify-content-start align-items-center flex-nowrap">
+                                <div class="col-9 p-0">
+                                    <input type="text" placeholder="Введите сумму" value="10000" id="exchange-target-input" />
+                                </div>
+                                <div class="col p-0">
+                                    <label for="exchange-target-input">RUB</label>
+                                </div>
+                            </div>
+                            <div class="-m-select">
+                                <select>
+                                    <option value="sberbank">Сбербанк</option>
+                                    <option value="alfabank">Alfa-Банк</option>
+                                    <option value="euroset">Евросеть</option>
+                                    <option value="qiwi">Qiwi</option>
+                                    <option value="yandex">Яндекс Деньги</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-7 col-lg-12 col-sm-12">
+                        <div class="d-flex justify-content-between align-items-center flex-wrap has-action">
+                            <div class="col-xl-8 col-lg-12 col-md-12 col-sm-12 p-0">
+                                <div class="exchange-item d-flex flex-wrap-reverse align-items-center justify-content-between">
+                                    <div class="input-wrapper d-flex justify-content-start align-items-center" style="width: 100%">
+                                        <div class="col-9 p-0">
+                                            <input type="text" placeholder="Введите сумму" value="0.01866998" id="ltc-input"/>
+                                        </div>
+                                        <div class="col p-0">
+                                            <label for="ltc-input">BTC</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12 pr-0 action-button">
+                                <button class="btc-tab-button">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<main role="main" class="create-wallet pt-5 pb-5">
+    <div class="container">
+        <div class="pt-4 pb-4">
+            <iframe style="width: 100%; min-height: 450px;" src="https://www.youtube.com/embed/i_0RkKwjEQU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <div class="mt-5">
+            <h3>Что такое криптовалюта BTC и кому она нужна?</h3>
+            <p>Криптовалюта (Биткоин) вызвала интерес и завоевала популярность во всем мире. Эта цифровая валюта совершенно не зависит от инфляции и не подкреплена золотом. Несмотря на это, многие стремятся купить биткоины за рубли в том числе, из - за их безопасности и независимости. Сделать это можно только после создания специального хранилища (кошелька).</p>
+            <p>Имея специальный ключ вы сможете распоряжаться своими виртуальными средствами - покупать или продавать их. На данный момент нет сложностей в принятии участия в сделках. Достаточно установить приложение на компьютер, планшет или смартфон и пройти регистрацию.</p>
+        </div>
+
+        <div class="mt-3">
+            <h3>Особенности приобретения BTC на биржах</h3>
+            <p>
+                Функционирует множество официальных сайтов на которых можно приобрести биткоин в 2020 году. Рейтинг таковых можно посмотреть здесь:
+                <a href="https://coinmarketcap.com/rankings/exchanges/" target="_blank">https://coinmarketcap.com/rankings/exchanges/</a>
+                . Количество крипто сервисов меняется - некоторые уходят с рынка, но постоянно появляются новые. Сегодня их количество оценивается в интервале от 300 до 500. Есть и те, которые давно зарекомендовали себя, такие как
+                <a href="https://coinmarketcap.com/exchanges/binance/">Binance</a>
+                или
+                <a href="https://coinmarketcap.com/exchanges/bitstamp/">Bitstamp</a>
+                . Являясь официально зарегистрированными сервисами они позволяют дешево обменять биткоин или продать уже имеющиеся единицы. Чтобы начать работать на бирже требуется пройти процесс регистрации.
+            </p>
+            <p>К проблемам этих ресурсов стоит отнести сложности в самостоятельной торговли. Найдется не много людей, которые лично разбираться в торгах и могут провести за этим занятием целый день. Гарантии возмещения убытков отсутствуют. Дополнительно, клиент сталкиваются с проблемой ошибочной транзакции. Надо заметить, что купить Bitcoin за рубли на бирже не получится, только если это не российские торговые площадки. Все эти риски и недостатки вызывают сомнения пользователей и необходимость искать более простую и надежную альтернативу.</p>
+        </div>
+
+        <div class="mt-3">
+            <h3>Матби и преимущества покупки криптовалюты в крипто-обменнике</h3>
+
+            <p>Матби – старейший, надёжный и стабильный сервис обмена биткоинов, который становится все более популярным с каждым днём. Он имеет понятный и удобный интерфейс, низкие комиссии (зачастую их полное отсутствие), кратчайшие сроки переводов, служба поддержки, а также, предлагает необходимый спектр услуг пользователям. По сравнению с биржей сайт простой, удобный и интуитивно понятный. Не требуется никаких специальных знаний и умений для совершения сделки. Сайт предлагает пользователю встроенный Web кошелёк для хранения крипто валюты. В случае сложностей при обмене всегда поможет служба технической поддержки, а круглосуточная работа обменника гарантирует спокойствие.</p>
+            <p>Многим нужно не только обменять bitcoin, но и перевести их на другой кошелек  Матби является одним из немногих, позволяющий провести операции в несколько кликов. Для этого стоит посетить раздел «Операции», и интуитивно понятный интерфейс приведет вас к совершению действия. Всего несколько минут ожидания, и вы получите желаемый результат.</p>
+            <p>Основная наша задача - это поддержание оптимального рублёвого курса к биткоину, быстрые и надёжные операции, простота использования, сохранение доверия пользователя.</p>
+        </div>
+
+        <div class="pt-5 pb-5">
+            <div class="d-flex justify-content-center align-items-center">
+                <div class="col-xl-10 col-lg-10 col-md-12 col-sm-12">
+                    <div class="row buy-btc">
+                        <div class="col-xl-5 col-lg-12 col-sm-12">
+                            <div class="exchange-item has-label d-flex flex-wrap-reverse align-items-center justify-content-between">
+                                <div class="input-wrapper d-flex justify-content-start align-items-center flex-nowrap">
+                                    <div class="col-9 p-0">
+                                        <input type="text" placeholder="Введите сумму" value="10000" id="exchange-target-input-1" />
+                                    </div>
+                                    <div class="col p-0">
+                                        <label for="exchange-target-input-1">RUB</label>
+                                    </div>
+                                </div>
+                                <div class="-m-select">
+                                    <select>
+                                        <option value="sberbank">Сбербанк</option>
+                                        <option value="alfabank">Alfa-Банк</option>
+                                        <option value="euroset">Евросеть</option>
+                                        <option value="qiwi">Qiwi</option>
+                                        <option value="yandex">Яндекс Деньги</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-7 col-lg-12 col-sm-12">
+                            <div class="d-flex justify-content-between align-items-center flex-wrap has-action">
+                                <div class="col-xl-8 col-lg-12 col-md-12 col-sm-12 p-0">
+                                    <div class="exchange-item d-flex flex-wrap-reverse align-items-center justify-content-between">
+                                        <div class="input-wrapper d-flex justify-content-start align-items-center" style="width: 100%">
+                                            <div class="col-9 p-0">
+                                                <input type="text" placeholder="Введите сумму" value="0.01866998" id="ltc-input"/>
+                                            </div>
+                                            <div class="col p-0">
+                                                <label for="ltc-input">BTC</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12 pr-0 action-button">
+                                    <button class="btc-tab-button">Купить</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+<footer>
+    <div class="bg-light-gray pt-5 pb-5">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="col-4 p-0">
+                    <a href="#"><img src="assets/img/icons/svg/logo.svg" alt="Matbea.com" /></a>
+                </div>
+
+                <div class="col-4 d-flex justify-content-end align-items-center misc-bar p-0">
+                    <span class="language">Eng</span>
+                    <span class="button button-primary">Войти</span>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 address">
+                    <h5>Address:</h5>
+
+                    <p>
+                        Republic of Austria, 1010 Wien, Rosenbursenstrasse 2/21
+                        We don't charge any associated fees.
+                        <a href="#">support@matbea.com</a>
+                    </p>
+
+                    <p>© 2013 - 2018 matbea in London</p>
+                </div>
+                <div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 footer-menu">
+                    <div class="row">
+                        <div class="col-xl-3 col-lg-3 col-6 col-md-6 col-sm-6">
+                            <h5>Главное:</h5>
+
+                            <ul>
+                                <li><a href="#">О Матби</a></li>
+                                <li><a href="#">Регистрация</a></li>
+                                <li><a href="#">Напишите нам</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-6 col-md-6 col-sm-6">
+                            <h5>Информация:</h5>
+
+                            <ul>
+                                <li><a href="#">Тарифы</a></li>
+                                <li><a href="#">Соглашение</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-6 col-md-6 col-sm-6">
+                            <h5>Финансы:</h5>
+
+                            <ul>
+                                <li><a href="#">Инвесторам</a></li>
+                                <li><a href="#">Курс Биткоин</a></li>
+                                <li><a href="#">Партнерская праграмма</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-6 col-md-6 col-sm-6">
+                            <h5>Узнать больше:</h5>
+
+                            <ul>
+                                <li><a href="#">Как купить Биткоин</a></li>
+                                <li><a href="#">Создать кашелек</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="seo-holder mt-5">
+                <p>КУПИТЬ БИТКОИНЫ НА МАТБИ. УДОБНЫЙ БИТКОИН КОШЕЛЕК - ОБМЕННИК!</p>
+                <p>Матби — это инновационный сервис, предоставляющий клиентам возможность создать биткоин кошелек, купить биткоины и хранить их в одном месте. Это позволит Вам покупать, продавать, хранить и тратить биткоины всего за несколько кликов мыши. С нами вы сможете в максимально удобной форме ознакомиться со всеми тонкостями работы с криптовалютой. Создать биткоин кошелек в Матби это не только просто, но и безопасно. Владельцу криптовалюты важно хранить ее в надежном месте. Безопасность, это одна из главных отличительных черт биткоин-кошелька Матби. В работу нашего сервиса мы внедрили трехуровневую систему идентификации: email, SMS и пин-код. Это позволит вам быть уверенными, что ваши цифровые деньги всегда находятся в надежном месте и недоступны для злоумышленников.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

@@ -1549,3 +1549,34 @@ main.create-wallet p.font-weight-bold {
 main.create-wallet img {
     max-width: 100%;
 }
+
+
+main.create-wallet-inner h2 {
+    font-family: Circe-Regular, sans-serif;
+    font-size: 2.19062rem;
+    font-weight: 300;
+    line-height: 1.2;
+    color: #000000;
+}
+
+main.create-wallet-inner p {
+    font-family: Circe-Regular, sans-serif;
+    font-size: 16px;
+    margin-top: 1.75rem;
+    color: #444;
+    font-weight: 300;
+}
+
+main.create-wallet-inner .advantages-block h3 {
+    margin-top: .8rem;
+    margin-bottom: 1.6rem;
+    font-size: 1.29808rem;
+    font-family: Circe-Regular, sans-serif;
+    font-weight: 300;
+    color: #444;
+}
+
+main.create-wallet-inner .advantages-block > * {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
