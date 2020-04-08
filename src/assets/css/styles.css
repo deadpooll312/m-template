@@ -2,11 +2,15 @@ body {
     font-family: Circe-Regular, sans-serif !important;
 }
 
+button:focus,input:focus,select:focus,textarea:focus {
+    outline: none;
+}
+
 .main-background {
     background-image: url(../img/header-background.jpg);
     background-size: cover;
     background-position: center;
-    height:724px;
+    height:635px;
     width:100%;
     position:absolute;
     top:0;
@@ -72,6 +76,10 @@ header.has-background {
     padding-bottom: 20px;
 }
 
+.nav-bar .main-menu {
+    padding-left: 50px;
+}
+
 .nav-bar .nav-menu {
     padding-left: 0;
     margin-bottom: 0;
@@ -95,7 +103,7 @@ header.has-background {
     background-position: center;
     background-repeat: no-repeat;
     top: 50%;
-    right: 0;
+    right: 10px;
     position: absolute;
     z-index: -1;
     transform: translate(0, -35%);
@@ -113,17 +121,17 @@ header.has-background {
 
 .nav-bar .nav-menu li a {
     display: block;
-    padding: 10px 15px;
+    padding: 10px 25px;
     cursor: pointer;
     color: #000;
     font-family: Circe-Regular, sans-serif;
-    font-size: 13px;
+    font-size: 14px;
 }
 
 .has-dropdown .dropdown {
     display: none;
     position: absolute;
-    left: 0;
+    left: 10px;
     top: 100%;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -551,7 +559,7 @@ section.hero-section {
 .panel span.gain {
     position: relative;
     font-family: Circe-Regular, sans-serif;
-    font-size: 13px;
+    font-size: 15px;
     padding-right: 15px;
 }
 
@@ -564,7 +572,7 @@ section.hero-section {
     width: 12px;
     height: 10px;
     position: absolute;
-    top: 4px;
+    top: 6px;
     right: 0;
 }
 
@@ -584,7 +592,7 @@ section.hero-section {
 }
 
 .panel h2 {
-    font-family: Circe-Light, sans-serif;
+    font-family: Circe-Regular, sans-serif;
     font-size: 19px;
     color: #000000;
     margin-bottom: 0;
@@ -593,14 +601,14 @@ section.hero-section {
 }
 
 .panel h2 span {
-    font-family: Circe-Regular, sans-serif;
+    font-family: Circe-Bold, sans-serif;
     font-weight: 600;
 }
 
 .panel > p {
     font-family: Circe-Regular, sans-serif;
-    font-size: 12px;
-    color: #4e4e4e;
+    font-size: 14px;
+    color: #bcbcbc;
     margin: 0;
     line-height: normal;
 }
@@ -784,7 +792,7 @@ button.button.hover-effect:hover {
 .info-block button.button.no-bg {
     border: 1px solid transparent;
     background: transparent;
-    font-family: Circe-Thin, sans-serif;
+    font-family: Circe-Regular, sans-serif;
     color: #000;
 }
 
@@ -812,7 +820,7 @@ button.button.hover-effect:hover {
 
 .advantages-block .item p {
     font-family: Circe-Light, sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     color: #868686;
 }
 
@@ -830,7 +838,7 @@ button.button.hover-effect:hover {
 
 .partners p {
     font-family: Circe-Light, sans-serif;
-    font-size: 15px;
+    font-size: 16px;
     line-height: 18px;
     text-align: center;
 }
@@ -841,10 +849,25 @@ button.button.hover-effect:hover {
 
 .partners a {
     font-family: Circe-Regular, sans-serif;
-    font-size: 12px;
+    font-size: 14px;
     color: #1f1f1f;
+    text-decoration: underline;
+    /*opacity: 0.3;*/
+}
+
+.partners a.button {
+    -webkit-appearance: none;
+    appearance: none;
+    display: inline-block;
+    border-radius: 4px;
+    border: 1px solid #2d58b6;
+    background-color: #2d58b6;
+    color: #ffffff;
     text-decoration: none;
-    opacity: 0.3;
+    padding: 8px 20px;
+    font-family: Circe-Light, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
 }
 
 .partners .item {
@@ -872,15 +895,15 @@ button.button.hover-effect:hover {
 
 .home-about-holder h3 {
     font-family: Circe-Bold, sans-serif;
-    font-size: 38px;
+    font-size: 32px;
     line-height: 45px;
     color: #000000;
 }
 
 .home-about-holder p {
     font-family: Circe-Regular, sans-serif;
-    font-size: 14px;
-    line-height: 23px;
+    font-size: 16px;
+    line-height: 30px;
     margin-top: 20px;
 }
 
@@ -919,7 +942,7 @@ footer {
 }
 
 footer h5 {
-    font-family: Circe-Regular, sans-serif;
+    font-family: Circe-Light, sans-serif;
     font-size: 14px;
     color: #000000;
     margin-bottom: 25px;
@@ -947,13 +970,21 @@ footer .footer-menu ul li {
 footer .footer-menu ul li a {
     display: block;
     padding: 5px 5px;
-    font-family: Circe-Ligt, sans-serif;
+    font-family: Circe-Light, sans-serif;
     font-size: 13px;
     color: #7f7f7f;
 }
 
 footer .footer-menu ul li a:hover {
     color: #7f7f7f;
+}
+
+footer a.footer-link,
+footer a.footer-link:hover {
+    color: #000;
+    text-decoration: none;
+    font-family: Circe-Light, sans-serif;
+    font-size: 14px;
 }
 
 @media screen and (max-width: 767px) {
@@ -971,6 +1002,10 @@ section.header-background {
 section.header-background .page-title-wrapper {
     padding-top: 80px;
     padding-bottom: 80px;
+}
+
+section.header-background .page-title-wrapper .arrow-wrapper {
+    margin-right: 1rem;
 }
 
 section.header-background .page-title-wrapper .page-title {
@@ -1005,6 +1040,22 @@ a.arrow-back, button.arrow-back, span.arrow-back {
     background-size: 15px;
     background-repeat: no-repeat;
     border: 1px solid #979797;
+}
+
+@media screen and (max-width: 991px) {
+    section.header-background .page-title-wrapper > .d-flex {
+        flex-wrap: wrap-reverse;
+    }
+
+    section.header-background .page-title-wrapper > .d-flex > * {
+        width: 100%;
+        text-align: center;
+    }
+
+    section.header-background .page-title-wrapper > .d-flex .arrow-wrapper {
+        margin-top: 30px;
+        margin-right: 0;
+    }
 }
 
 main.information {
@@ -1098,6 +1149,34 @@ main.information p.font-weight-bold {
     font-family: Circe-Thin, sans-serif;
 }
 
+@media screen and (max-width: 767px) {
+    .information-hero .information-dots-1 {
+        display: none;
+    }
+
+    .information-hero .information-dots-2 {
+        display: none;
+    }
+
+    .information-hero .hero-text {
+        position: absolute;
+        padding: 0;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: auto;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 373px) {
+    .information-hero .hero-text {
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
 .bg-light-gray {
     background-color: #f7f7f7;
 }
@@ -1141,7 +1220,7 @@ main.information .alert-box p {
     font-weight: 300;
     font-size: 1.29808rem;
     color: #000000;
-    font-family: Circe-Thin, sans-serif;
+    font-family: Circe-Light, sans-serif;
 }
 
 main.information .ticket-cell h2 {
@@ -1374,11 +1453,10 @@ form.register-form .ico.ico-lock {
 }
 
 form.register-form p {
-    font-size: 1.00962rem;
-    color: #000000;
-    font-weight: 300;
-    font-family: Circe-Thin, sans-serif;
-    margin-bottom: 0;
+    font-size: 1.00962rem !important;
+    color: #000000 !important;
+    font-family: Circe-Light, sans-serif;
+    margin-bottom: 0 !important;
 }
 
 form.register-form p a,
@@ -1397,12 +1475,20 @@ form.register-form label {
     font-size: .9rem;
     color: #000000;
     font-weight: 300;
-    font-family: Circe-Thin, sans-serif;
-    margin-top: 15px;
+    font-family: Circe-Light, sans-serif;
+    /*margin-top: 15px;*/
+    margin: 10px 0 0 0 ;
 }
 
 form.register-form label.present-label {
     margin-bottom: 10px;
+}
+
+form.register-form label a,
+form.register-form label a:visited {
+    color: #2d58b6;
+    text-decoration: underline;
+    background-color: transparent;
 }
 
 form.register-form .input-with-button {
@@ -1537,12 +1623,12 @@ main.create-wallet p {
     font-size: 1.00962rem;
     color: #444;
     margin-bottom: 1.75rem;
-    font-family: Circe-Regular, sans-serif;
+    font-family: Circe-Light, sans-serif;
     font-weight: 300;
 }
 
 main.create-wallet p.font-weight-bold {
-    font-family: Circe-Bold, sans-serif;
+    font-family: Circe-Regular, sans-serif;
     font-weight: 500;
 }
 
@@ -1579,4 +1665,277 @@ main.create-wallet-inner .advantages-block h3 {
 main.create-wallet-inner .advantages-block > * {
     padding-top: 2rem;
     padding-bottom: 2rem;
+}
+
+
+main.charts h2 {
+    font-family: Circe-Light, sans-serif;
+    font-weight: 400;
+    font-size: 2.39062rem;
+}
+
+.course-panel {
+    background: #f7f7f7;
+    display: block;
+    color: #3c3c3c;
+    padding: 1.3rem 1.3rem .5rem;
+    margin: 0 0 1rem;
+}
+
+.course-panel .panel-header {
+    padding-bottom: .8rem;
+}
+
+.course-panel .panel-header h3 {
+    font-family: Circe-Light, sans-serif;
+    font-size: 2rem;
+    line-height: 1.3;
+    margin: 0;
+}
+
+.course-panel .panel-header span {
+    font-family: Circe-Light, sans-serif;
+    font-size: .75rem;
+    display: block;
+}
+
+.course-panel .panel-body span.caption {
+    font-size: .75rem;
+    opacity: .3;
+    font-family: Circe-Light, sans-serif;
+    line-height: 1.2;
+    display: block;
+}
+
+.course-panel .panel-body .currency-item {
+    padding: 1rem 0 1.5rem;
+}
+
+.course-panel .panel-body .currency-item .right-divider {
+    border-right: 1px solid hsla(0,0%,58.8%,.1);
+}
+
+.course-panel .panel-body p.crypto-currency {
+    font-size: .75rem;
+    display: block;
+    margin: 0;
+}
+
+.course-panel .panel-body p.crypto-currency-value {
+    font-size: 1.15385rem;
+    display: block;
+    line-height: 1.1;
+    font-family: Circe-Light, sans-serif;
+}
+
+.course-panel .panel-footer {
+    padding-bottom: .8rem;
+}
+
+.course-panel .panel-footer .gain-wrapper {
+    position: relative;
+    padding-top: .4rem;
+}
+
+.course-panel .panel-footer p {
+    font-size: 2.65rem;
+    color: #6aa42a;
+    margin: 0;
+    font-family: Circe-Light, sans-serif;
+}
+
+.course-panel .panel-footer .up p {
+    color: #6aa42a;
+}
+
+.course-panel .panel-footer .down p {
+    color: #a42a2a;
+}
+
+.course-panel .panel-footer .course-icon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.course-panel .panel-footer .up .course-icon {
+    background-image: url(../img/icons/chart-icon.jpeg);
+}
+
+.course-panel .panel-footer .down .course-icon {
+    background-image: url(../img/icons/char-icon-down.jpeg);
+}
+
+.course-panel .panel-footer a.button,
+.course-panel .panel-footer button.button {
+    margin-top: .6rem;
+    -webkit-appearance: none;
+    appearance: none;
+    display: block;
+    padding: .65rem 1.3rem;
+    /*height: 49px;*/
+    font-size: 1.08173rem;
+    border-radius: .25rem;
+    border: 1px solid #ced4da;
+    color: #4b4b4b;
+    text-align: center;
+
+    transition: border .5s, background-color .5s, color .5s;
+}
+
+.course-panel .panel-footer a.button:hover,
+.course-panel .panel-footer button.button:hover {
+    text-decoration: none;
+    border-color: #4b4b4b;
+    background-color: #4b4b4b;
+    color: #fff;
+}
+
+main.charts h3.sub-header {
+    font-family: Circe-Light, sans-serif;
+    font-weight: 400;
+    line-height: 1.2;
+    color: inherit;
+    font-size: 1.96875rem;
+    margin-top: 97px;
+    margin-bottom: 35px;
+}
+
+main.charts.inner iframe {
+    width: 100%;
+    height: 500px;
+}
+
+main.charts.inner p {
+    font-family: Circe-Light, sans-serif;
+    padding-bottom: 20px;
+}
+
+.shadow {
+    box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.3);
+}
+
+.rounded {
+    border-radius: 4px;
+}
+
+.login-form-modal {
+
+}
+
+.close {
+    cursor: pointer;
+    display: inline-block;
+}
+
+.close .ico {
+    display: inline-block;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.close .ico.ico-close {
+    width: 18px;
+    height: 18px;
+    background-image: url(../img/icons/svg/close.svg);
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.login-form-modal p.help {
+    font-family: Circe-Light, sans-serif;
+    font-size: 13px !important;
+}
+
+aside.offcanvas-menu {
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+aside.offcanvas-menu header {
+    width: 100%;
+}
+
+aside.offcanvas-menu footer {
+    width: 100%;
+}
+
+aside.offcanvas-menu footer .button {
+    border-radius: 4px;
+    border: 1px solid #7e7e7e;
+    color: #000000;
+}
+
+aside.offcanvas-menu .menu-wrapper {
+    width: 100%;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+aside.offcanvas-menu .menu-wrapper ul {
+    padding-left: 0;
+    min-height: 100%;
+    /*padding-bottom: 20px;*/
+}
+
+aside.offcanvas-menu .menu-wrapper ul li {
+    list-style-type: none;
+    position: relative;
+}
+
+aside.offcanvas-menu .menu-wrapper ul li.has-dropdown::after {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5IiBoZWlnaHQ9IjUiPjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTQuMDU0IDQuODJMLjE4NCAxLjA1YS42MDQuNjA0IDAgMDEwLS44Ny42NDMuNjQzIDAgMDEuODkyIDBMNC41IDMuNTE3IDcuOTI0LjE4YS42NDIuNjQyIDAgMDEuODkxIDAgLjYwMi42MDIgMCAwMTAgLjg2OUw0Ljk0NSA0LjgyQS42MzUuNjM1IDAgMDE0LjUgNWEuNjM1LjYzNSAwIDAxLS40NDYtLjE4eiIvPjwvc3ZnPg==);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 20px;
+    right: 10px;
+    position: absolute;
+    z-index: -1;
+    transform: translate(0, -35%);
+
+    transition: .3s;
+}
+
+aside.offcanvas-menu .menu-wrapper ul li a {
+    display: block;
+    text-decoration: none;
+    font-family: Circe-Regular, sans-serif;
+    font-size: 14px;
+    color: #6a6a6a;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+aside.offcanvas-menu .menu-wrapper ul li.active a {
+    color: #000000;
+    font-weight: 500;
+}
+
+aside.offcanvas-menu .menu-wrapper ul li a:hover {
+    text-decoration: none;
+    background: rgba(0, 0, 0, 0.07);
+}
+
+aside.offcanvas-menu .menu-wrapper ul li.has-dropdown .dropdown {
+    position: relative;
+    display: block;
+    box-shadow: none;
+    left: unset;
+    top: unset;
+}
+
+aside.offcanvas-menu .menu-wrapper ul li.has-dropdown .dropdown > ul > li > a {
+    padding-left: 30px;
 }

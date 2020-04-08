@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="assets/css/bootstrap-reboot.min.css" />
     <link rel="stylesheet" href="assets/css/bootstrap-grid.min.css" />
     <link rel="stylesheet" href="assets/css/shortcuts.css" />
+    <link rel="stylesheet" href="assets/css/fonts.css" />
     <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 <body>
@@ -36,25 +37,44 @@
 
         <div class="col main-menu">
             <ul class="nav-menu d-flex justify-content-start align-items-center">
-                <li><a href="#">Главная</a></li>
-                <li><a href="#">О Матби</a></li>
-                <li><a href="#">Тарифы</a></li>
-                <li><a href="#">Соглашение</a></li>
-                <li><a href="#">Инвесторам</a></li>
+                <li><a href="information.html">О Матби</a></li>
+                <li><a href="tariffs.html">Тарифы</a></li>
                 <li class="has-dropdown">
-                    <a href="#">Создать кашелек</a>
+                    <a href="create-wallet.html">Создать кашелек</a>
 
                     <div class="dropdown">
                         <ul>
-                            <li><a href="#">Создать Биткоин кашелек</a></li>
-                            <li><a href="#">Создать Лайткоин кашелек</a></li>
-                            <li><a href="#">Создать Dash кашелек</a></li>
-                            <li><a href="#">Создать Zcash кашелек</a></li>
+                            <li><a href="create-bitcoin-wallet.html">Создать Биткоин кашелек</a></li>
+                            <li><a href="create-bitcoin-wallet.html">Создать Лайткоин кашелек</a></li>
+                            <li><a href="create-bitcoin-wallet.html">Создать Dash кашелек</a></li>
+                            <li><a href="create-bitcoin-wallet.html">Создать Zcash кашелек</a></li>
                         </ul>
                     </div>
                 </li>
-                <li><a href="#">Как купить биткоин</a></li>
-                <li><a href="#">Курс биткоин</a></li>
+                <li class="has-dropdown">
+                    <a href="buy.html">Купить криптовалюту</a>
+
+                    <div class="dropdown">
+                        <ul>
+                            <li><a href="buy-btc.html">Купить Биткоин</a></li>
+                            <li><a href="buy-btc.html">Купить Лайткоин</a></li>
+                            <li><a href="buy-btc.html">Купить Dash</a></li>
+                            <li><a href="buy-btc.html">Купить Zcash</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="has-dropdown">
+                    <a href="charts.html">Курсы криптовалют</a>
+
+                    <div class="dropdown">
+                        <ul>
+                            <li><a href="charts-inner.html">Курс Биткоина</a></li>
+                            <li><a href="charts-inner.html">Курс Лайткоина</a></li>
+                            <li><a href="charts-inner.html">Курс Dash</a></li>
+                            <li><a href="charts-inner.html">Курс Zcash</a></li>
+                        </ul>
+                    </div>
+                </li>
             </ul>
         </div>
 
@@ -201,7 +221,7 @@
             <div class="panel">
                 <div class="d-flex justify-content-between align-items-center">
                     <span class="updated">10 сентября 2019 (в 11:32 )</span>
-                    <span class="gain up">2.34</span>
+                    <span class="gain up">3,27%</span>
                 </div>
                 <h2>1 BTC = <span>465 235.00 ₽</span></h2>
                 <p>Продажа = 462 465.00 ₽ </p>
@@ -218,7 +238,7 @@
             <div class="panel">
                 <div class="d-flex justify-content-between align-items-center">
                     <span class="updated">10 сентября 2019 (в 11:32 )</span>
-                    <span class="gain up">2.34</span>
+                    <span class="gain up">9,67%</span>
                 </div>
                 <h2>1 LTC = <span>43 665.00 ₽</span></h2>
                 <p>Продажа = 462 465.00 ₽</p>
@@ -235,7 +255,7 @@
             <div class="panel">
                 <div class="d-flex justify-content-between align-items-center">
                     <span class="updated">10 сентября 2019 (в 11:32 )</span>
-                    <span class="gain down">2.34</span>
+                    <span class="gain down">2,95%</span>
                 </div>
                 <h2>1 ZEC = <span>5 235.00 ₽</span></h2>
                 <p>Продажа = 462 465.00 ₽</p>
@@ -252,7 +272,7 @@
             <div class="panel">
                 <div class="d-flex justify-content-between align-items-center">
                     <span class="updated">10 сентября 2019 (в 11:32 )</span>
-                    <span class="gain up">2.34</span>
+                    <span class="gain up">5,64%</span>
                 </div>
                 <h2>1 DASH = <span>4655.00 ₽</span></h2>
                 <p>Продажа = 462 465.00 ₽</p>
@@ -270,60 +290,25 @@
     </div>
 </section>
 
-<section class="promotion-block mt-3">
-    <div class="container">
-        <div class="promotion-wrapper d-flex justify-content-between align-items-center">
-            <div class="promotion-info-wrapper">
-                <p>Криптосреда</p>
-                <h2>
-                    <span class="sub-text">Двойной бонус -</span><br/>
-                    Только по средам!
+<!--<section class="promotion-block mt-3">-->
+<!--    <div class="container">-->
+<!--        <div class="promotion-wrapper d-flex justify-content-between align-items-center">-->
+<!--            <div class="promotion-info-wrapper">-->
+<!--                <p>Криптосреда</p>-->
+<!--                <h2>-->
+<!--                    <span class="sub-text">Двойной бонус -</span><br/>-->
+<!--                    Только по средам!-->
 
-                    <img src="assets/img/promotion-badge.svg" alt="Promotion Badge" class="badge" />
-                </h2>
-                <button type="button">Подробнее</button>
-            </div>
-            <div class="promotion-thumbnail-wrapper">
-                <img src="assets/img/hero-image.jpg" alt="Promotion">
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="partners">
-    <div class="container">
-        <h3>Доступный способ покупки</h3>
-        <p>Большой выбор способов пополнения и вывода средств с лицевого счета.</p>
-
-        <div class="text-center">
-            <a href="#">Как купить биткоин?</a>
-        </div>
-
-        <div class="d-flex justify-content-center align-items-center flex-wrap mt-4">
-            <div class="item">
-                <img src="assets/img/partners/sberbank.png" alt="Sberbank" />
-            </div>
-            <div class="item">
-                <img src="assets/img/partners/alfabank.png" alt="Sberbank" />
-            </div>
-            <div class="item">
-                <img src="assets/img/partners/euroset.png" alt="Sberbank" />
-            </div>
-            <div class="item">
-                <img src="assets/img/partners/qiwi.png" alt="Sberbank" />
-            </div>
-            <div class="item">
-                <img src="assets/img/partners/vtb.png" alt="Sberbank" />
-            </div>
-            <div class="item">
-                <img src="assets/img/partners/rustandart.png" alt="Sberbank" />
-            </div>
-            <div class="item">
-                <img src="assets/img/partners/yandex.png" alt="Sberbank" />
-            </div>
-        </div>
-    </div>
-</section>
+<!--                    <img src="assets/img/promotion-badge.svg" alt="Promotion Badge" class="badge" />-->
+<!--                </h2>-->
+<!--                <button type="button">Подробнее</button>-->
+<!--            </div>-->
+<!--            <div class="promotion-thumbnail-wrapper">-->
+<!--                <img src="assets/img/hero-image.jpg" alt="Promotion">-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
 
 <section class="info-block mt-5">
     <div class="container">
@@ -333,9 +318,8 @@
 
                 <h3>Безопасно</h3>
 
-                <p>Мы используем трех-факторную аутентификацию:</p>
-                <p>СМС-код, емейл-код и пин-код. Даже если на вашем компьютере поселился вирус, он никак не сможет считать код из СМС. А если вирус поселится на смартфоне, он не сможет считать пин-код или емейл-код.</p>
-                <p>Гибкая система настройки безопасности - Вы можете опционально подключить любую из удобных для Вас систему безопасности</p>
+                <p>В личном кабинете нашего обменника трех-факторная аутентификация: код из СМС, код из email и пин-код. В случае, если ваш компьютер заражен вирусом, мошенники никак не смогут считать уникальный код из СМС. Если вирусом заражен телефон, ему будет недоступен ваш пин-код и код из письма.</p>
+                <p>Система безопасности кошелька-обменника настраивается гибко, под нужды пользователя. Самостоятельно можно подключить любую из доступных и комфортных для вас функций, отвечающих за безопасность вашей криптовалюты.</p>
 
                 <div class="d-flex justify-content-start align-items-center mt-5">
                     <button class="button secondary">Войти</button>
@@ -366,15 +350,14 @@
             <div class="col-xl col-lg col-md col-sm-12 info-block-text">
                 <span class="icon coins"></span>
 
-                <h3>Earn with matbea</h3>
+                <h3>Зарабатывай с Матби</h3>
 
-                <p>The Matby affiliate program has 7 levels - inviting friends, you will receive not only a percentage of their purchases of Bitcoin, Litecoin, Dash, Zach, but also a percentage of their invited friends and friends of friends up to level 7.</p>
-                <p>The affiliate program is not only profitable, but also as transparent as possible - detailed statistics and a full list of referrals are available in the personal account of each participant.</p>
-                <p>For your convenience, we provide all the ready material for placement - various banner and gif animations.</p>
+                <p>Мы предлагаем одну из самых выгодных и удобных многоуровневых партнерских программ. Начисляется процент от операций по обмену и покупке Bitcoin, Litecoin, Dash и Zcash. Помимо этого вы будете получать процент от операций не только приглашенных вами друзей, но также и друзей друзей, вплоть до 7 уровня.
+                    В личном кабинете участника представлена вся подробная статистика программы. Там вы найдете список рефералов и начисленные средства.</p>
 
                 <div class="d-flex justify-content-start align-items-center mt-5">
-                    <button class="button secondary">Start work</button>
-                    <button class="button no-bg ml-3">Register</button>
+                    <button class="button secondary">Начать зарабатывать</button>
+                    <button class="button no-bg ml-3">Регистрация</button>
                 </div>
             </div>
         </div>
@@ -420,16 +403,66 @@
     </div>
 </section>
 
+<section class="partners">
+    <div class="container">
+        <h3>Доступный способ покупки</h3>
+        <p>Большой выбор способов пополнения и вывода средств с лицевого счета.</p>
+
+        <div class="text-center">
+            <a href="#">Как купить биткоин?</a>
+        </div>
+
+        <div class="d-flex justify-content-center align-items-center flex-wrap mt-4">
+            <div class="item">
+                <img src="assets/img/partners/sberbank.png" alt="Sberbank" />
+            </div>
+            <div class="item">
+                <img src="assets/img/partners/alfabank.png" alt="Sberbank" />
+            </div>
+            <div class="item">
+                <img src="assets/img/partners/euroset.png" alt="Sberbank" />
+            </div>
+            <div class="item">
+                <img src="assets/img/partners/qiwi.png" alt="Sberbank" />
+            </div>
+            <div class="item">
+                <img src="assets/img/partners/vtb.png" alt="Sberbank" />
+            </div>
+            <div class="item">
+                <img src="assets/img/partners/rustandart.png" alt="Sberbank" />
+            </div>
+            <div class="item">
+                <img src="assets/img/partners/yandex.png" alt="Sberbank" />
+            </div>
+            <div class="item">
+                <img src="data:image/png;base64,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" alt="Sberbank" />
+            </div>
+            <div class="item">
+                <img src="data:image/png;base64,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" alt="Sberbank" />
+            </div>
+            <div class="item">
+                <img src="data:image/png;base64,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" alt="Sberbank" />
+            </div>
+            <div class="item">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIsAAAAcCAYAAABRekwEAAABJmlDQ1BBZG9iZSBSR0IgKDE5OTgpAAAoz2NgYDJwdHFyZRJgYMjNKykKcndSiIiMUmA/z8DGwMwABonJxQWOAQE+IHZefl4qAwb4do2BEURf1gWZxUAa4EouKCoB0n+A2CgltTiZgYHRAMjOLi8pAIozzgGyRZKywewNIHZRSJAzkH0EyOZLh7CvgNhJEPYTELsI6Akg+wtIfTqYzcQBNgfClgGxS1IrQPYyOOcXVBZlpmeUKBhaWloqOKbkJ6UqBFcWl6TmFit45iXnFxXkFyWWpKYA1ULcBwaCEIWgENMAarTQZKAyAMUDhPU5EBy+jGJnEGIIkFxaVAZlMjIZE+YjzJgjwcDgv5SBgeUPQsykl4FhgQ4DA/9UhJiaIQODgD4Dw745AMDGT/0ZOjZcAAAACXBIWXMAAAsTAAALEwEAmpwYAAAE6WlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS42LWMxNDIgNzkuMTYwOTI0LCAyMDE3LzA3LzEzLTAxOjA2OjM5ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1sbnM6cGhvdG9zaG9wPSJodHRwOi8vbnMuYWRvYmUuY29tL3Bob3Rvc2hvcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RFdnQ9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZUV2ZW50IyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ0MgKFdpbmRvd3MpIiB4bXA6Q3JlYXRlRGF0ZT0iMjAxOC0xMi0wNVQxNjoyNjowOCswMzowMCIgeG1wOk1vZGlmeURhdGU9IjIwMTgtMTItMDVUMTY6NTA6NTQrMDM6MDAiIHhtcDpNZXRhZGF0YURhdGU9IjIwMTgtMTItMDVUMTY6NTA6NTQrMDM6MDAiIGRjOmZvcm1hdD0iaW1hZ2UvcG5nIiBwaG90b3Nob3A6Q29sb3JNb2RlPSIzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOmNkYmNmYjY4LTQ0MWQtNTI0YS1iYzIxLTAyOWUwNzlkMjRhNyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpjZGJjZmI2OC00NDFkLTUyNGEtYmMyMS0wMjllMDc5ZDI0YTciIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpjZGJjZmI2OC00NDFkLTUyNGEtYmMyMS0wMjllMDc5ZDI0YTciPiA8eG1wTU06SGlzdG9yeT4gPHJkZjpTZXE+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJjcmVhdGVkIiBzdEV2dDppbnN0YW5jZUlEPSJ4bXAuaWlkOmNkYmNmYjY4LTQ0MWQtNTI0YS1iYzIxLTAyOWUwNzlkMjRhNyIgc3RFdnQ6d2hlbj0iMjAxOC0xMi0wNVQxNjoyNjowOCswMzowMCIgc3RFdnQ6c29mdHdhcmVBZ2VudD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSIvPiA8L3JkZjpTZXE+IDwveG1wTU06SGlzdG9yeT4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5uo0ouAAADb0lEQVRo3u2bzWvVQBDAnyiIiDdPHgQRUU87yRNRiuBJEVG8mE2lFiyCgrVQUCvaakG9qKjoxT/AU6FFVERUUBDxovgnKNKLeBM9+IHPTcr7SLKb7MdskveSgaElm93kzfw2M7ObNBoeaaGqSIbJiPEYgej0i5/nwylhm8z12kLdHUr33vcysm2zsQNlhAsL/OSq0OmwWCpYKgVKFixjQ2u4hqFkHAUWVeH1lxnTBiw2JlRfwkLJXSmjtVrLaliqAgoPFsxcARMWChdLA0ticsGd6sGim1h65LtezsIzvHNf7vpwiHucwgsth5vAUhlpw0LhgQEsLTRYZJ3WFt/dheLwGhYFWFTzBVWjZYUhVadR515HlR0Ol1HDUOVyljLDEjgX8+kQ5D/YCe7s7hU1LKWAJeHs32btznljWCh5WdHSGf4UCstwcy1qiMrq78OslUU5D54MPiyUfCkEFrF+7ZbMzqhWeZz+5LluDcQKwPLBOiy1DAwsz2pYapGF5VGusFDyWHmcICnNXNAj89q/QaWPbIhStRuFz8r3KBfW3xj07bl2CAs8zBUWnXFkYOnmJN80rvurcFh07KLi8Pi2hBYsHiz0JSxKToOhSPvRPau1nWECi4ldet8CwEjAlduWwtB85g/ohpAf6LAkjsFHfFiQNiFzgwX+NnxnndVqTRMWfs4S3LDMQCqwBGsRkRm+fYOUUQcdlni+kkdprwcLPM00FBosmm+dqeQscRHN0GCJHnMT0gQWXbvkDosHz0sHCyUn0GBJe2mr32Bpv5ohAwt1t9p4srySzlk894A2LJ67N6Vs/JQ6nkkYsrWVgAULhbPC844AKN0/FsjiJ4ugDseuhkxmKSYsslsNecFiYhfsQkMiwX1XCCwBAHOHlwvbT+9baQyLqbGLgeVfGEJGm+vDAkAljFqHxYP31mGhzY1m3+hYg2W6dLBgh0LVKi8Dltfh0yVV4W2mmtycDiwi9Z2TKWNOG80wbFiCfDFPWIw+IMzri0SfTCY0LpM7V4VL0pTcZH9vh9p5xaG5hUEww45dZXDfWDrHucSOTbD/j6WsXxyPqGh12HeusHFvheo7B3vK7rGEdtrgAtMz7LdMsX7XWDK6iVO2T0Q0aZephCbOgf1s/HMR7S6SjidUGRZY4OhivVFcdZHeXoG5+Hn/AZzIpGmhdGXGAAAAAElFTkSuQmCC" alt="Sberbank" />
+            </div>
+        </div>
+
+        <div class="mt-5 text-center">
+            <a href="buy-btc.html" class="button">Купить</a>
+        </div>
+    </div>
+</section>
+
 <section class="home-about">
     <div class="container container-m-r">
         <div class="home-about-holder">
             <h3>
-                Проверенный годами<br />
-                и тысячами пользователей
+                Проверенный годами и тысячами пользователей
             </h3>
             <p>Крипто-кошелек Матби успешно работает с 2014. Наша цель - предоставить простой, удобный, а главное безопасный способ работы с криптовалютами абсолютно для все. За 4 года работы мы заслужили репутацию безопасного сервиса. Нам доверяют тысячи людей. Создайте свой крипто-кошелек сейчас и станьте частью нашего сообщества!</p>
 
-            <button type="button" class="button">Узнать больше</button>
+            <button type="button" class="button">Узнать больше о нас</button>
         </div>
     </div>
 </section>
@@ -447,62 +480,76 @@
             </div>
         </div>
 
-        <div class="row mt-5">
-            <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 address">
-                <h5>Address:</h5>
+        <div class="bottom-divider">
+            <div class="row mt-5">
+                <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 address">
+                    <a href="mailto:support@matbea.com" class="footer-link">support@matbea.com</a>
 
-                <p>
-                    Republic of Austria, 1010 Wien, Rosenbursenstrasse 2/21
-                    We don't charge any associated fees.
-                    <a href="#">support@matbea.com</a>
-                </p>
+                    <p class="mt-5">© 2013 - 2020 Матби</p>
+                </div>
+                <div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 footer-menu">
+                    <div class="row">
+                        <div class="col-xl-3 col-lg-3 col-6 col-md-6 col-sm-6">
+                            <h5>Главное:</h5>
 
-                <p>© 2013 - 2018 matbea in London</p>
-            </div>
-            <div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 footer-menu">
-                <div class="row">
-                    <div class="col-xl-3 col-lg-3 col-6 col-md-6 col-sm-6">
-                        <h5>Главное:</h5>
+                            <ul>
+                                <li><a href="information.html">О Матби</a></li>
+                                <li><a href="#">Регистрация</a></li>
+                                <li><a href="#">Напишите нам</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-6 col-md-6 col-sm-6">
+                            <h5>Информация:</h5>
 
-                        <ul>
-                            <li><a href="#">О Матби</a></li>
-                            <li><a href="#">Регистрация</a></li>
-                            <li><a href="#">Напишите нам</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-xl-3 col-lg-3 col-6 col-md-6 col-sm-6">
-                        <h5>Информация:</h5>
+                            <ul>
+                                <li><a href="#">Тарифы</a></li>
+                                <li><a href="#">Соглашение</a></li>
+                                <li><a href="#">Политика конфиденциальности</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-6 col-md-6 col-sm-6">
+                            <h5>Финансы:</h5>
 
-                        <ul>
-                            <li><a href="#">Тарифы</a></li>
-                            <li><a href="#">Соглашение</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-xl-3 col-lg-3 col-6 col-md-6 col-sm-6">
-                        <h5>Финансы:</h5>
+                            <ul>
+                                <li><a href="#">Куда вложить деньги</a></li>
+                                <li><a href="#">Курсы криптовалют</a></li>
+                                <li><a href="#">Партнерская праграмма</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-6 col-md-6 col-sm-6">
+                            <h5>Узнать больше:</h5>
 
-                        <ul>
-                            <li><a href="#">Инвесторам</a></li>
-                            <li><a href="#">Курс Биткоин</a></li>
-                            <li><a href="#">Партнерская праграмма</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-xl-3 col-lg-3 col-6 col-md-6 col-sm-6">
-                        <h5>Узнать больше:</h5>
-
-                        <ul>
-                            <li><a href="#">Как купить Биткоин</a></li>
-                            <li><a href="#">Создать кашелек</a></li>
-                        </ul>
+                            <ul>
+                                <li><a href="#">Как купить Биткоин</a></li>
+                                <li><a href="#">Создать кашелек</a></li>
+                                <li><a href="#">Статьи</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="seo-holder mt-5">
-            <p>КУПИТЬ БИТКОИНЫ НА МАТБИ. УДОБНЫЙ БИТКОИН КОШЕЛЕК - ОБМЕННИК!</p>
-            <p>Матби — это инновационный сервис, предоставляющий клиентам возможность создать биткоин кошелек, купить биткоины и хранить их в одном месте. Это позволит Вам покупать, продавать, хранить и тратить биткоины всего за несколько кликов мыши. С нами вы сможете в максимально удобной форме ознакомиться со всеми тонкостями работы с криптовалютой. Создать биткоин кошелек в Матби это не только просто, но и безопасно. Владельцу криптовалюты важно хранить ее в надежном месте. Безопасность, это одна из главных отличительных черт биткоин-кошелька Матби. В работу нашего сервиса мы внедрили трехуровневую систему идентификации: email, SMS и пин-код. Это позволит вам быть уверенными, что ваши цифровые деньги всегда находятся в надежном месте и недоступны для злоумышленников.</p>
+        <div class="mt-5">
+
+            <!-- BestChange -->
+            <a target="_blank" href="https://www.bestchange.ru/matbea-exchanger.html"><img src="https://www.bestchange.ru/bestchange.gif" title="Обмен QIWI, Bitcoin, Tether, AdvCash" alt="Мониторинг обменных пунктов BestChange" width="88" height="31" border="0"></a>
+            <!-- BestChange -->
+
+            <!-- askoin -->
+            <a target="_blank" class="ml-5" href="https://askoin.com/matbea"><img src="assets/img/askoin.svg" title="Мониторинг обменников криптовалют, купить биткоин и другую криптовалюту по лучшим ценам!" alt="Мониторинг обменников криптовалют, купить биткоин и другую криптовалюту по лучшим ценам!" width="67" height="31" border="0"></a>
+            <!-- askoin -->
+
+            <!-- kurs.expert -->
+            <a target="_blank" class="ml-5" href="https://kurs.expert/ru/obmennik/matbea/feedbacks.html#reputation"><img src="assets/img/course-expert.png" title="Интерактивный анализ обменников электронных валют." alt="Интерактивный анализ обменников электронных валют." width="101" height="31" border="0"></a>
+            <!-- kurs.expert -->
+
         </div>
+
+<!--        <div class="seo-holder mt-5">-->
+<!--            <p>КУПИТЬ БИТКОИНЫ НА МАТБИ. УДОБНЫЙ БИТКОИН КОШЕЛЕК - ОБМЕННИК!</p>-->
+<!--            <p>Матби — это инновационный сервис, предоставляющий клиентам возможность создать биткоин кошелек, купить биткоины и хранить их в одном месте. Это позволит Вам покупать, продавать, хранить и тратить биткоины всего за несколько кликов мыши. С нами вы сможете в максимально удобной форме ознакомиться со всеми тонкостями работы с криптовалютой. Создать биткоин кошелек в Матби это не только просто, но и безопасно. Владельцу криптовалюты важно хранить ее в надежном месте. Безопасность, это одна из главных отличительных черт биткоин-кошелька Матби. В работу нашего сервиса мы внедрили трехуровневую систему идентификации: email, SMS и пин-код. Это позволит вам быть уверенными, что ваши цифровые деньги всегда находятся в надежном месте и недоступны для злоумышленников.</p>-->
+<!--        </div>-->
     </div>
 </footer>
 

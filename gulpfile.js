@@ -37,7 +37,12 @@ function minImg() {
 }
 
 function _del() {
-    return del('dist/')
+    return del([
+        'dist/css',
+        'dist/fonts',
+        'dist/img',
+        'dist/js'
+    ])
 }
 
 function copyFonts() {
